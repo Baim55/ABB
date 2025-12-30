@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header
+      class="flex py-2 lg:py-5 px-4 sm:px-10 bg-white tracking-wide relative z-50"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between gap-5 w-full"
+      >
+        <a href="javascript:void(0)" class="max-sm:hidden"
+          ><img src="src/img/ABB-logo.png" alt="logo" class="w-24"
+        /></a>
+        <a href="javascript:void(0)" class="hidden max-sm:block"
+          ><img src="src/img/ABB-logo.png" alt="logo" class="w-14"
+        /></a>
+
+        <div class="flex flex-1 items-center justify-between ml-10">
+          <div
+            id="collapseMenu"
+            class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+          >
+            <ul
+              class="lg:flex gap-x-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+            >
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-blue-700 text-blue-700 block font-medium text-[15px]"
+                  >Fərdi</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]"
+                  >Biznes</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]"
+                  >Haqqımızda</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-blue-700 text-slate-900 block font-medium text-[15px]"
+                  >İnvestorlarla əlaqə</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex max-lg:ml-auto">
+            <button
+              class="hidden lg:flex items-center mt-1 p-2 text-[14px] font-medium cursor-pointer tracking-wide text-[#7a7d82]"
+            >
+              <i class="fa-solid fa-magnifying-glass text-[18px]"></i>
+            </button>
+            <button
+              class="p-2 text-[14px] font-medium cursor-pointer tracking-wide text-[#7a7d82] hover:text-black transition-all"
+            >
+              <span class="lg:text-[16px] lg:border-x-2 border-[#0A0B0D29] px-3"
+                >AZ</span
+              >
+            </button>
+            <button
+              class="p-2 text-sm font-medium cursor-pointer tracking-wide text-[#7a7d82]"
+            >
+              <span
+                class="text-[14px] lg:text-[16px] border-x-2 border-[#0A0B0D29] lg:border-x-0 px-4 lg:pl-1 flex items-center"
+                ><i
+                  class="fa-solid fa-phone text-[10px] lg:text-[12px] pt-1"
+                ></i
+                >937</span
+              >
+            </button>
+            <button
+              class="px-[11px] py-2 text-sm hidden lg:flex items-center gap-2 rounded-xl font-medium cursor-pointer tracking-wide text-white border border-blue-600 bg-blue-600 hover:bg-blue-700 transition-all"
+            >
+              <i class="fa-solid fa-location-dot"></i> Xidmət şəbəkəsi
+            </button>
+
+            <button id="toggleOpen" class="lg:hidden cursor-pointer p-2">
+              <svg
+                class="w-7 h-7"
+                fill="#7a7d82"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bg-[#f3f3f3]">
+        <div class="container px-3 lg:px-0">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 py-4 lg:py-16">
+            <div class="lg:col-span-2">
+              <div
+                id="default-carousel"
+                class="relative w-full"
+                data-carousel="slide"
+              >
+                <div
+                  class="relative bg-[#7e48fa] rounded-[28px] h-full grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                >
+                  <div
+                    class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                  >
+                    <div>
+                      <span
+                        class="inline-block bg-[#9365fb] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                      >
+                        ABB AI Assistent
+                      </span>
+
+                      <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                        Səsli Süni İntellekt köməkçiniz
+                      </h2>
+
+                      <p class="mt-5 text-base">Artıq xidmətinizdədir!</p>
+                    </div>
+
+                    <div class="mt-6">
+                      <a
+                        href="#"
+                        class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                      >
+                        ABB mobile
+                      </a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                  >
+                    <img
+                      src="src/img/ai_1_738c7d167c.png"
+                      alt="AI"
+                      class="max-h-[146px] lg:max-h-[320px] object-contain"
+                    />
+                  </div>
+
+                  <div
+                    class="absolute bottom-4 left-3 lg:bottom-auto lg:top-8 lg:right-8 lg:left-auto flex items-center gap-1 z-30"
+                  >
+                    <button
+                      type="button"
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 hover:bg-black transition"
+                      data-carousel-prev
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m15 19-7-7 7-7"
+                        />
+                      </svg>
+                    </button>
+
+                    <div
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 text-white text-[20px] font-medium"
+                    >
+                      1
+                    </div>
+
+                    <button
+                      type="button"
+                      class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 hover:bg-black transition"
+                      data-carousel-next
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m9 5 7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex overflow-x-auto lg:contents gap-4">
+              <div
+                class="relative flex justify-between flex-col bg-white min-h-[240px] max-w-[220px] shrink-0 lg:max-w-full rounded-[28px]"
+              >
+                <div
+                  class="lg:py-[32px] lg:pr-[12px] lg:pl-[32px] pt-[20px] pb-[12px] px-[20px]"
+                >
+                  <h4 class="text-[18px] font-[500] lg:text-[24px]">
+                    DigiDeposit
+                  </h4>
+                  <p class="text-[#484a4f] lg:text-[16px] pt-[10px] leading-5">
+                    ABB mobile tətbiqindən əmanət hesabınızı onlayn açın
+                  </p>
+                </div>
+                <div
+                  class="hidden absolute top-6 right-6 w-10 h-10 bg-gray-300/30 rounded-full lg:flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+                <div
+                  class="group flex w-full items-end justify-end overflow-hidden"
+                >
+                  <img
+                    src="src/img/v30000_1_88847b9b69.png"
+                    alt=""
+                    class="max-h-[107px] w-auto self-end object-contain transition-all duration-300 lg:max-h-[166px] group-hover:scale-110"
+                  />
+                </div>
+              </div>
+              <div
+                class="relative flex justify-between flex-col lg:flex-row bg-white min-h-[240px] max-w-[220px] shrink-0 lg:max-w-full rounded-[28px]"
+              >
+                <div
+                  class="lg:py-[32px] lg:pr-[12px] lg:pl-[32px] pt-[20px] pb-[12px] px-[20px]"
+                >
+                  <h4 class="text-[18px] font-[500] lg:text-[24px]">ABB Biz</h4>
+                  <p class="text-[#484a4f] lg:text-[16px] pt-[10px]">
+                    Kiçik bizneslər üçün xidmətlər. Mobil tətbiqi yükləyin
+                  </p>
+                </div>
+                <div
+                  class="hidden absolute top-6 right-6 w-10 h-10 bg-gray-300/30 rounded-full lg:flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+                <div
+                  class="flex w-full items-end justify-end group overflow-hidden"
+                >
+                  <img
+                    src="src/img/ABB_mobile0000_1_35e5063f51.png"
+                    alt=""
+                    class="max-h-[107px] w-auto self-end object-contain transition-all duration-300 lg:max-h-[166px] group-hover:scale-110"
+                  />
+                </div>
+              </div>
+              <div
+                class="relative flex justify-between flex-col lg:flex-row bg-white lg:min-h-[180px] min-h-[240px] max-w-[220px] shrink-0 lg:max-w-full rounded-[28px]"
+              >
+                <div
+                  class="lg:py-[32px] lg:pr-[12px] lg:pl-[32px] pt-[20px] pb-[12px] px-[20px]"
+                >
+                  <h4 class="text-[18px] font-[500] lg:text-[24px]">
+                    Nağd kredit
+                  </h4>
+                  <p class="text-[#484a4f] lg:text-[16px] pt-[10px]">
+                    Təcili pul ehtiyacınız üçün sərfəli kredit müraciəti edin
+                  </p>
+                </div>
+                <div
+                  class="hidden absolute top-6 right-6 w-10 h-10 bg-gray-300/30 rounded-full lg:flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+                <div
+                  class="group flex w-full items-end justify-end overflow-hidden"
+                >
+                  <img
+                    src="src/img/ABB_mobile0000_1_1_f103d8c90f.png"
+                    alt=""
+                    class="max-h-[107px] w-auto self-end object-contain transition-all duration-300 lg:max-h-[166px] group-hover:scale-110"
+                  />
+                </div>
+              </div>
+              <div
+                class="relative flex justify-between flex-col lg:flex-row bg-white min-h-[240px] max-w-[220px] shrink-0 lg:max-w-full rounded-[28px]"
+              >
+                <div
+                  class="lg:py-[32px] lg:pr-[12px] lg:pl-[32px] pt-[20px] pb-[12px] px-[20px]"
+                >
+                  <h4 class="text-[18px] font-[500] lg:text-[24px]">
+                    ABB mobile
+                  </h4>
+                  <p class="text-[#484a4f] lg:text-[16px] pt-[10px]">
+                    Bank əməliyyatlarını sadə və sürətli şəkildə tamamlayın
+                  </p>
+                </div>
+                <div
+                  class="hidden absolute top-6 right-6 w-10 h-10 bg-gray-300/30 rounded-full lg:flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+                <div
+                  class="group flex w-full items-end justify-end overflow-hidden"
+                >
+                  <img
+                    src="src/img/ABB_mobile0000_1_2_b8cca87be8.png"
+                    alt=""
+                    class="max-h-[107px] w-auto self-end object-contain transition-all duration-300 lg:max-h-[166px] group-hover:scale-110"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#f3f3f3] pb-[64px]">
+        <div class="container">
+          <div class="pt-[40px] pb-[64px] px-[16px] lg:px-0">
+            <h3 class="text-center text-[#7a7d82]">Sürətli keçidlər</h3>
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 pt-[16px]"
+            >
+              <div
+                class="flex justify-between flex-col items-center gap-2 p-[8px]"
+              >
+                <img
+                  src="src/img/quick_action_de1924bd9a.png"
+                  alt=""
+                  class="max-h-[70px]"
+                />
+                <p>İpoteka krediti</p>
+              </div>
+              <div
+                class="flex justify-between flex-col items-center gap-3 p-[8px]"
+              >
+                <img
+                  src="src/img/quick_action_cb64fc51ac.png"
+                  alt=""
+                  class="max-h-[70px]"
+                />
+                <p>Debet kartlar</p>
+              </div>
+              <div
+                class="flex justify-between flex-col items-center gap-3 p-[8px]"
+              >
+                <img
+                  src="src/img/quick_action_4d2f54dca3.png"
+                  alt=""
+                  class="max-h-[70px]"
+                />
+                <p>Kredit kartları</p>
+              </div>
+              <div
+                class="flex justify-between flex-col items-center gap-3 p-[8px]"
+              >
+                <img
+                  src="src/img/D_app_5_0eca73b01a.png"
+                  alt=""
+                  class="max-h-[70px]"
+                />
+                <p>Keşbek</p>
+              </div>
+              <div
+                class="flex justify-between flex-col items-center gap-3 p-[8px]"
+              >
+                <img
+                  src="src/img/63_1_a8fb2ffbb8.png"
+                  alt=""
+                  class="max-h-[70px]"
+                />
+                <p>Filiallar və ATM-lər</p>
+              </div>
+              <div
+                class="flex justify-between flex-col items-center gap-3 p-[8px]"
+              >
+                <img
+                  src="src/img/quick_action_f917461d10.png"
+                  alt=""
+                  class="max-h-[70px]"
+                />
+                <p>İnvestisiya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-t-4xl lg:rounded-t-[80px] mt-[-64px] bg-white">
+        <div
+          class="container grid lg:grid-cols-2 grid-cols-1 gap-5 lg:gap-4 px-[16px] md:px-[32px] pt-[32px] lg:pt-[80px] lg:pb-[64px] lg:px-0"
+        >
+          <div class="flex justify-between gap-5 lg:gap-10 flex-col">
+            <div class="flex justify-between flex-col">
+              <div class="flex items-center gap-2 lg:gap-6">
+                <img
+                  src="src/img/master_8ec815b00f.png"
+                  alt=""
+                  class="h-[27px] w-[43px] object-contain lg:h-[56px] lg:w-[90px]"
+                />
+                <p class="text-[32px] lg:text-[64px] font-medium">
+                  Tam DigiCard
+                </p>
+              </div>
+              <div>
+                <p class="text-[32px] lg:text-[64px] font-medium lg:leading-18">
+                  Tam rəqəmsal,<br />
+                  Tam real!
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-6 lg:gap-8">
+              <div class="flex flex-col gap-1">
+                <p
+                  class="lg:text-[24px] text-[18px] text-[#0a0b0d] font-medium"
+                >
+                  Pulsuz
+                </p>
+                <span class="text-[#484a4f] text-[14px] lg:text-[16px]"
+                  >Qiymət</span
+                >
+              </div>
+              <div class="flex flex-col gap-1">
+                <p
+                  class="lg:text-[24px] text-[18px] text-[#0a0b0d] font-medium"
+                >
+                  10%-ə qədər
+                </p>
+                <a href="" class="text-[#1b63ed] text-[14px] lg:text-[16px]"
+                  >Faydalı keşbek</a
+                >
+              </div>
+              <div class="flex flex-col gap-1">
+                <p
+                  class="lg:text-[24px] text-[18px] text-[#0a0b0d] font-medium"
+                >
+                  *İllik 6% gəlir
+                </p>
+                <span class="text-[#484a4f] text-[14px] lg:text-[16px]"
+                  >Faiz dərəcəsi</span
+                >
+              </div>
+            </div>
+            <div class="my-[13px]">
+              <a
+                href=""
+                class="bg-[#1b63ed] hover:bg-[#134fc2] font-medium rounded-2xl py-[15px] px-[23px] text-white"
+                >Sifariş edin</a
+              >
+            </div>
+            <div>
+              <p class="text-[12px] text-[#7a7d82]">
+                *ABB mobile-da qeydiyyatdan keçmiş və kartını əlavə etmiş
+                müştərilərə aiddir
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="src/img/image_204956752_845ec35044.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bg-white pb-[64px]">
+        <div class="container py-[32px] px-[16px] lg:py-[64px]">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-4 text-center lg:text-left"
+          >
+            <div
+              class="lg:col-span-4 flex flex-col justify-between gap-3 lg:gap-4"
+            >
+              <p
+                class="text-[24px] lg:text-[48px] font-medium text-[#0a0b0d] leading-13"
+              >
+                Kredit limitinizi
+                <span
+                  class="bg-gradient-to-r from-[#5384e4] via-[#6da0ed] to-[#9cd5fe] bg-clip-text text-transparent font-medium"
+                  >öyrənin</span
+                >
+              </p>
+              <p class="lg:text-[20px] text-[16px] text-[#484a4f]">
+                50 000 AZN-dək krediti tam onlayn əldə edin!
+              </p>
+            </div>
+            <div class="lg:col-span-8 pt-[40px]">
+              <form action="">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Mobil nömrə"
+                    class="border border-[#e1e1e2] h-[60px] px-[12px] rounded-xl"
+                  />
+                  <input
+                    type="text"
+                    placeholder="FİN kod"
+                    class="border border-[#e1e1e2] h-[60px] px-[12px] rounded-xl"
+                  />
+                </div>
+                <div
+                  class="flex flex-col gap-4 lg:gap-24 lg:flex-row pt-[32px]"
+                >
+                  <div class="flex gap-2 items-center justify-between">
+                    <input type="checkbox" class="w-6 h-6" />
+                    <p class="text-[12px] text-[#7a7d82] text-left">
+                      “Davam et” düyməsinə klikləməklə
+                      <a href="" class="text-[#1b63ed] underline"
+                        >Azərbaycan Kredit Bürosu</a
+                      >
+                      və
+                      <a href="" class="text-[#1b63ed] underline"
+                        >ASAN Finans</a
+                      >
+                      vasitəsilə məlumatlarımın ABB-yə təqdim edilməsinə razılıq
+                      verirəm.
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <button
+                      class="w-full bg-[#ececec] text-[#808081] font-medium whitespace-nowrap px-[25px] py-[15px] rounded-xl"
+                    >
+                      Davam et
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gradient-to-r from-[#24282f] via-[#363a43] to-[#292d34] mt-[-64px] rounded-t-4xl lg:rounded-t-[60px]"
+      >
+        <div class="container">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 px-[20px] lg:px-0"
+          >
+            <div
+              class="pt-[32px] lg:pt-[64px] lg:pb-[80px] flex flex-col gap-5 lg:gap-12 text-center lg:text-left"
+            >
+              <div class="flex flex-col gap-3 lg:gap-4 lg:pr-3">
+                <p
+                  class="text-[32px] lg:text-[64px] text-white font-medium lg:leading-17"
+                >
+                  Gələcəyinizi
+                  <span
+                    class="bg-gradient-to-r from-[#70a6ff] to-[#74c4ff] bg-clip-text text-transparent font-medium"
+                    >ABB</span
+                  >
+                  ilə qurun!
+                </p>
+                <p class="text-[18px] text-[#c2c3c5]">
+                  Maraqlı fürsətləri araşdırın, karyeranızı inkişaf etdirin və
+                  təsir göstərin. Bu gün ABB Karyera Platformasında yenilikçi
+                  komandamıza qoşulun!
+                </p>
+              </div>
+              <div class="flex items-center justify-center lg:justify-start">
+                <a
+                  href=""
+                  class="py-[15px] pl-[19px] pr-[15px] font-medium bg-white rounded-xl flex justify-between items-center gap-2"
+                  >Bizə qatılın<i class="fa-solid fa-arrow-right pt-1.5"></i
+                ></a>
+              </div>
+            </div>
+            <div class="lg:pt-[32px]">
+              <img
+                src="src/img/sayt_elvar_Artboard_1_copy_2_1_75deb8d2e3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
