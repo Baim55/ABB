@@ -135,100 +135,361 @@
             <div class="lg:col-span-2">
               <div
                 id="default-carousel"
-                class="relative w-full"
-                data-carousel="slide"
+                class="relative w-full overflow-hidden rounded-[28px]"
               >
                 <div
-                  class="relative bg-[#7e48fa] rounded-[28px] h-full grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                  id="carousel-inner"
+                  class="flex transition-transform duration-500 ease-in-out"
                 >
-                  <div
-                    class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
-                  >
-                    <div>
-                      <span
-                        class="inline-block bg-[#9365fb] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
-                      >
-                        ABB AI Assistent
-                      </span>
-
-                      <h2 class="text-xl lg:text-4xl font-medium mt-4">
-                        Səsli Süni İntellekt köməkçiniz
-                      </h2>
-
-                      <p class="mt-5 text-base">Artıq xidmətinizdədir!</p>
-                    </div>
-
-                    <div class="mt-6">
-                      <a
-                        href="#"
-                        class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
-                      >
-                        ABB mobile
-                      </a>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
-                  >
-                    <img
-                      src="src/img/ai_1_738c7d167c.png"
-                      alt="AI"
-                      class="max-h-[146px] lg:max-h-[320px] object-contain"
-                    />
-                  </div>
-
-                  <div
-                    class="absolute bottom-4 left-3 lg:bottom-auto lg:top-8 lg:right-8 lg:left-auto flex items-center gap-1 z-30"
-                  >
-                    <button
-                      type="button"
-                      class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 hover:bg-black transition"
-                      data-carousel-prev
-                    >
-                      <svg
-                        class="w-5 h-5 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m15 19-7-7 7-7"
-                        />
-                      </svg>
-                    </button>
-
+                  <div class="w-full flex-shrink-0">
                     <div
-                      class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 text-white text-[20px] font-medium"
+                      class="relative bg-[#1b63ed] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
                     >
-                      1
-                    </div>
-
-                    <button
-                      type="button"
-                      class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 hover:bg-black transition"
-                      data-carousel-next
-                    >
-                      <svg
-                        class="w-5 h-5 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
                       >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m9 5 7 7-7 7"
+                        <div>
+                          <span
+                            class="inline-block bg-[#407cf0] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >Bayram günləri</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            Bayram günlərində də xidmətinizdəyik!
+                          </h2>
+                          <p class="mt-5 text-base">
+                            3 yanvar tarixində fəaliyyət göstərən filiallarımıza
+                            yaxınlaşaraq xidmətlərimizdən yararlanın.
+                          </p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >Daha ətraflı</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/Bayram_Guenl_ri_mart_1_1000x1000_png_dc4f796355.png"
+                          alt="AI"
+                          class="max-h-[130px] lg:max-h-[220px] object-contain"
                         />
-                      </svg>
-                    </button>
+                      </div>
+                    </div>
                   </div>
+                  <div class="w-full flex-shrink-0">
+                    <div
+                      class="relative bg-[#7e48fa] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                    >
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                      >
+                        <div>
+                          <span
+                            class="inline-block bg-[#9365fb] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >ABB AI Assistent</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            Səsli Süni İntellekt köməkçiniz
+                          </h2>
+                          <p class="mt-5 text-base">Artıq xidmətinizdədir!</p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >ABB mobile</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/ai_1_738c7d167c.png"
+                          alt="AI"
+                          class="max-h-[146px] lg:max-h-[320px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full flex-shrink-0">
+                    <div
+                      class="relative bg-[#1b63ed] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                    >
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                      >
+                        <div>
+                          <span
+                            class="inline-block bg-[#407cf0] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >Nağd kredit</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            Nağd kreditə 6%-dək endirim!
+                          </h2>
+                          <p class="mt-5 text-base">
+                            50 000 AZN-dək nağd krediti filiala gəlmədən,
+                            olduğunuz yerdən əldə edin!
+                          </p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >İndi sifariş edin</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/komissiyasiz_m_daxil_f69d5973e9.png"
+                          alt="AI"
+                          class="max-h-[146px] lg:max-h-[220px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full flex-shrink-0">
+                    <div
+                      class="relative bg-[#9b39e5] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                    >
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                      >
+                        <div>
+                          <span
+                            class="inline-block bg-[#ab59e9] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >Biznes krediti</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            VÖEN ilə kredit imkanı
+                          </h2>
+                          <p class="mt-5 text-base">
+                            Fərdi sahibkarlara özəl 100 000 AZN-dək tam onlayn
+                            kredit əldə edin!
+                          </p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >Müraciət edin</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/image_12_5c134b7e21.png"
+                          alt="AI"
+                          class="max-h-[146px] lg:max-h-[220px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full flex-shrink-0">
+                    <div
+                      class="relative bg-[#1b63ed] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                    >
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                      >
+                        <div>
+                          <span
+                            class="inline-block bg-[#407cf0] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >7-17 yaş üçün</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            Alpha Card
+                          </h2>
+                          <p class="mt-5 text-base">
+                            İndi həm rəqəmsal, həm fiziki!
+                          </p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >Onlayn sifariş edin</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/sldier2_89d5a32c73.png"
+                          alt="AI"
+                          class="max-h-[146px] lg:max-h-[220px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full flex-shrink-0">
+                    <div
+                      class="relative bg-[#009ec6] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                    >
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                      >
+                        <div>
+                          <span
+                            class="inline-block bg-[#29aecf] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >Biznes krediti</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            Sahibkar krediti
+                          </h2>
+                          <p class="mt-5 text-base">
+                            500 000 AZN-dək “Sahibkar” kreditini 1 iş günü
+                            ərzində əldə edin.
+                          </p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >Müraciət edin</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/image_12_5c134b7e21.png"
+                          alt="AI"
+                          class="max-h-[146px] lg:max-h-[220px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full flex-shrink-0">
+                    <div
+                      class="relative bg-[#1b63ed] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                    >
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                      >
+                        <div>
+                          <span
+                            class="inline-block bg-[#407cf0] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >Tam DigiCard</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            Tam DigiCard
+                          </h2>
+                          <p class="mt-5 text-base">
+                            Kartınızı onlayn sifariş edin və fürsətlərdən
+                            faydalanın!
+                          </p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >Onlayn sifariş edin</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/sldier_1_2_18b3519b59.png"
+                          alt="AI"
+                          class="max-h-[146px] lg:max-h-[220px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full flex-shrink-0">
+                    <div
+                      class="relative bg-[#009ec6] min-h-[450px] lg:min-h-[350px] grid grid-cols-1 lg:grid-cols-5 overflow-hidden"
+                    >
+                      <div
+                        class="col-span-3 flex flex-col justify-between text-white p-6 lg:p-10 relative z-10"
+                      >
+                        <div>
+                          <span
+                            class="inline-block bg-[#29aecf] text-sm lg:text-base font-medium px-3 py-1 rounded-lg"
+                            >Hesab</span
+                          >
+                          <h2 class="text-xl lg:text-4xl font-medium mt-4">
+                            DigiHesab Max
+                          </h2>
+                          <p class="mt-5 text-base">
+                            Hesabınızdakı qalıq məbləğə illik 6% gəlir əldə
+                            edin.
+                          </p>
+                        </div>
+                        <div class="mt-6">
+                          <a
+                            href="#"
+                            class="inline-block bg-white text-black px-5 py-3 rounded-xl font-medium"
+                            >DigiHesab Max</a
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-span-2 flex items-end justify-end lg:absolute lg:bottom-0 right-0 lg:z-20"
+                      >
+                        <img
+                          src="src/img/Deposit_purple0000_2_1_a7e73c0a10_243da87f0f.png"
+                          alt="AI"
+                          class="max-h-[146px] lg:max-h-[220px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute bottom-4 left-3 lg:bottom-auto lg:top-8 lg:right-8 lg:left-auto flex items-center gap-1 z-30"
+                >
+                  <button
+                    type="button"
+                    onclick="prevSlide()"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 hover:bg-black transition"
+                  >
+                    <svg
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path stroke-width="2" d="m15 19-7-7 7-7" />
+                    </svg>
+                  </button>
+
+                  <div
+                    id="slide-number"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 text-white text-[20px] font-medium"
+                  >
+                    1
+                  </div>
+
+                  <button
+                    type="button"
+                    onclick="nextSlide()"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600/30 hover:bg-black transition"
+                  >
+                    <svg
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path stroke-width="2" d="m9 5 7 7-7 7" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1676,6 +1937,52 @@
         counter = 0;
         updateSlider();
       });
+    </script>
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll("#carousel-inner > div");
+      const inner = document.getElementById("carousel-inner");
+      const slideNumDisplay = document.getElementById("slide-number");
+
+      function updateSlide() {
+        inner.style.transform = `translateX(-${currentSlide * 100}%)`;
+        slideNumDisplay.innerText = currentSlide + 1;
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlide();
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlide();
+      }
+
+      // --- AVTOMATİK ÇEVRİLMƏ HİSSƏSİ ---
+
+      // Hər 5 saniyədən bir (5000 millissaniyə) nextSlide funksiyasını çağırır
+      let autoSlideInterval = setInterval(nextSlide, 5000);
+
+      // İstifadəçi düymələrə basdıqda avtomatik sürüşmənin pozulmaması
+      // və ya vaxtın sıfırlanması üçün intervalı yeniləmək yaxşı olar:
+      function resetInterval() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 5000);
+      }
+
+      // Mövcud funksiyaları təkmilləşdirək ki, kliklədikdə vaxt sıfırlansın
+      const originalNextSlide = nextSlide;
+      nextSlide = function () {
+        originalNextSlide();
+        resetInterval();
+      };
+
+      const originalPrevSlide = prevSlide;
+      prevSlide = function () {
+        originalPrevSlide();
+        resetInterval();
+      };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
